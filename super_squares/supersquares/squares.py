@@ -1,5 +1,5 @@
 import random
-import tabulate
+from tabulate import tabulate as tb
 
 class Squares:
     """
@@ -73,8 +73,7 @@ class Squares:
         print(f"\tHalftime payout: {self.q2}%, ${self.total_pot *(self.q2/100)}")
         print(f"\tQ3 payout: {self.q3}%, ${self.total_pot *(self.q3/100)}")
         print(f"\tFinal Score payout: {self.q4}%, ${self.total_pot *(self.q4/100)}")
-        print(f"Available squares: {len(self.squares_pool)}")
-        print(f"Unavailable squares: {len(self.squares_dict)}")
+        print(f"Total squares: {len(self.squares_pool)}")
 
     def add_player(self, name: str, n_squares: int):
         """
@@ -168,7 +167,7 @@ class Squares:
         rowIDs = [f"{i}\n{self.team_a}" for i in range(self.n_rows)]
 
         # create a table from the assigned squares
-        table = tabulate(
+        table = tb(
             output,
             headers=[f"{i}\n{self.team_b}" for i in range(self.n_cols)],
             showindex=rowIDs,
