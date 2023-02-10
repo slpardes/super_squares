@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+supersquares/__init__.py
+supersquares/squares.py
+supersquares.egg-info/PKG-INFO
+supersquares.egg-info/SOURCES.txt
+supersquares.egg-info/dependency_links.txt
+supersquares.egg-info/top_level.txt

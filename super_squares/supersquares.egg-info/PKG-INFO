@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: supersquares
+Version: 0.0.1
+Summary: Create Super Bowl squares
+Home-page: https://github.com/slpardes/supersquares
+Author: Sammy Pardes
+Author-email: sammy.pardes@syr.edu
+Classifier: Programming Language :: Python 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Super Squares
+
+Super Squares is a tool that allows anyone to generate and randomly assign Super Bowl squares.
+
+## Prerequisites 
+
+Before you begin, ensure you have met the following requirements:
+
+- You have read the documentation 
+
+## Installing Super Squares
+
+To install Super Squares, follow these steps on all OS devices:
+
+1. Install using the following command: `pip install supersquares`
+2. Import with: `from supersquares import squares`
+
+## Usage Example
+
+1. Create a Squares() instance and name it `pr_squares` using the following command: `pr_squares = Squares()`
+2. To specify requirements for the pool, modify the line above to include the desireced variables: `pr_squares = Squares(cost_per_square = 10, team_a = "Pawnee", team_b = "Eagleton")`
+3. Check out the specifications with the `SquareStats()` function. For example, `pr_squares.SquareStats()` would generate: 
+```
+Number of rows: 10
+Number of columns: 10
+Minimum number of squares: None
+Maximum number of squares: None
+Team A: Pawnee
+Team B: Eagleton
+Cost per square: $10
+Total pot: $1000
+	Q1 payout: 15%, $150.0
+	Halftime payout: 30%, $300.0
+	Q3 payout: 15%, $150.0
+	Final Score payout: 40%, $400.0
+Available squares: 100
+Unavailable squares: 0
+```
+
+4. Add users to the pool with the `add_users()` function: `` 
+5. Generate the grid
+6. Clear the grid
+7. Regenerate the grid
+8. Print the grid
+9. Enter the score at the end of each quarter 
+
+## FAQ
+
+### What variables can be modified?
+min/max, cost per square, payout percentages, team names, grid size
+
+### Why can't I manually choose squares?
+Accoring to [sportingnews.com](https://www.sportingnews.com/us/nfl/news/super-bowl-squares-grid-2023-best-numbers/ltur0ayv6wvsdkyjjk2cnmdo) , as of 2022, in the history of the Super Bowl, the four best combinations have been 0-0 (19 times), 0-3 (13 times), 0-7 (11 times) and 7-0 (10 times) and 3-7 (10 times)
+
+Squares are assigned randomly to fairly distribute squares with a greater chance of winning.
+
+## Contact
+If you want to contact me, you can reach me at slpardes@syr.edu.
+
+## License
+This project uses the following license: MIT License.
