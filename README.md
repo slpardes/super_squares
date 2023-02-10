@@ -75,8 +75,7 @@ Each player has squares associated with their name. To get the squares assigned 
 		Halftime payout: 30%, $300.0
 		Q3 payout: 10%, $100.0
 		Final Score payout: 50%, $500.0
-	Available squares: 100
-	Unavailable squares: 0
+	Total squares: 100
 	```
 3. Add new users to the pool. Note: the entered number of squares must be available in the pool. Players must have unique names. 
 	Input: 
